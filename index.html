@@ -9,6 +9,8 @@
     <script type="text/babel">
         const root = document.getElementById("root");
         //React에서 변수 사용하지않고 데이터 담는법 
+        //데이터가 바뀔때마다 컴포넌트를 리렌더링하고 UI를 refresh함
+        //리액트는 두번째 이벤트리스너가 등록되거나 Total click을 다시 만드는게 아님->state가 바뀌면 리렌더링 일어남 
         function App(){
             const [counter,setCounter] = React.useState(0); //React.useState()함수는 초기값 설정 가능 
             // React.useState()함수가 이전의 let counter = 0; function countUp()을 대체 
